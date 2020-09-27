@@ -1,3 +1,6 @@
+// i just made the function prototypes, rest was source code
+
+
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
