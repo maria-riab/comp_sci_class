@@ -29,7 +29,7 @@ int main(int argc, char* argv[])
         return 1;
     }
 
-    //initialize buffer, output file, jpeg counter, and jpeg flag
+    //initialize buffer, output file, jpeg counter
     FILE* img = NULL ;
 
     BYTE buffer[NUM];
