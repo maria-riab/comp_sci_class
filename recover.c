@@ -42,7 +42,7 @@ int main(int argc, char* argv[])
         //if jpeg header found
         if(is_jpeg(buffer))
         {
-            jpeg_counter++;
+            jpeg_counter++; //increment jpeg counter
 
             // //a jpeg has already been found, close current open jpeg
             if (jpeg_counter > 0)
@@ -50,7 +50,7 @@ int main(int argc, char* argv[])
                 fclose(img);
             }
 
-            //open a file w these perameters and increment jpeg counter
+            //open a file w these perameters
             char filename[9];
 
             sprintf(filename, "%03i.jpg", jpeg_counter);
