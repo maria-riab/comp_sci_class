@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
-#include <cs50.h>
+#include <stdbool.h>
 
 #define NUM 512
 
