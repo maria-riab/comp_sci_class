@@ -37,7 +37,6 @@ int main(int argc, char *argv[])
 
     int jpeg_counter = 0;
 
-
     char filename[9];
 
     //repeat till end of file, read 512 bytes into the memory card
