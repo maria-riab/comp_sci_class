@@ -52,7 +52,21 @@ int main(void)
 
     print_list(list);
 
+    delete_node(found, list);
     
+    print_list(list);
+    
+    //this is what prints out:
+    //~/practice/ $ ./list
+    //10 - 9 - 8 - 7 - 6 - 5 - 4 - 3 - 2 - 1 - end of list
+    //found : 10 
+    //10 - 11 - 9 - 8 - 7 - 6 - 5 - 4 - 3 - 2 - 1 - end of list
+    //0 - 11 - 9 - 8 - 7 - 6 - 5 - 4 - 3 - 2 - 1 - end of list
+    
+    //valgrind says:
+   // ==379== Invalid read of size 4
+    //==379==    at 0x400803: print_list (list.c:107)
+    //==379==    by 0x400766: main (list.c:57)
     delete_list(list);
 
 }
