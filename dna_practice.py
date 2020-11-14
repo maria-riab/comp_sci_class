@@ -32,8 +32,6 @@ dna_finder =[ ["AGATC" , re.findall(r'(?:AGATC)+', dna_strand)],
 #AGATC = re.findall(r'(?:AGATC)+', dna_strand)
 if dna_finder[1][1] != 0:
     max_dna = max(map(len,(dna_finder[1][1]))) // len(dna_finder[1][0])
-elif dna_finder == 0:
-    max_dna = 0
 else: 
     max_dna = 0
 
